@@ -80,7 +80,7 @@ export default function HeroSection() {
                 ref={titleLine2Ref}
                 className="inline-block font-serif italic font-light text-zinc-400 pl-[4vw] normal-case"
               >
-                begets
+                builds
               </span>
             </div>
             <div className="overflow-hidden clip-text flex items-center gap-4">

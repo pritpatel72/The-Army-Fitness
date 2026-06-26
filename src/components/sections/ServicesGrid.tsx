@@ -95,7 +95,7 @@ export default function ServicesGrid() {
             SERVICES & DISCIPLINES
           </span>
           <h2 className="text-4xl md:text-5xl font-syne font-black text-white tracking-tight">
-            HOW WE FORGE RESULTS
+            HOW WE BUILD STRENGTH
           </h2>
           <p className="text-zinc-400 text-sm md:text-base max-w-xl mt-4">
             Our training methodologies combine evidence-based programming with disciplined execution 

@@ -85,8 +85,8 @@ export default function AboutBrief() {
               OUR PHILOSOPHY
             </span>
             <h3 className="about-fade text-3xl md:text-5xl font-syne font-black text-white leading-tight tracking-tight">
-              FORGED IN DISCIPLINE, <br />
-              BUILT FOR STRENGTH.
+              DISCIPLINE IS THE FOUNDATION, <br />
+              STRENGTH IS THE RESULT.
             </h3>
             <p className="about-fade text-zinc-400 text-sm md:text-base leading-relaxed font-sans max-w-2xl pt-4">
               At The Army Fitness, we believe consistency is the ultimate force multiplier. 

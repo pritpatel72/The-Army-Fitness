@@ -115,7 +115,7 @@ export default function PostsShowcase() {
                   </span>
                 </div>
                 <h3 className="text-xl md:text-2xl font-display font-extrabold text-white group-hover:text-gym-accent transition-colors leading-tight">
-                  DISCIPLINE BEGETS STRENGTH
+                  DISCIPLINE BUILDS STRENGTH
                 </h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">
                   True power is forged when motivation runs dry. We analyze the mental architecture of consistency and how pushing 
