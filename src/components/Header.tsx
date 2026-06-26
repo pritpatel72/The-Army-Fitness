@@ -42,13 +42,17 @@ export default function Header() {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3 group"
           >
             <img 
-              src="/logo.png" 
+              src="/logo-symbol.jpg" 
               alt="The Army Fitness Logo" 
               className="h-10 w-auto object-contain brightness-95 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300"
             />
+            <div className="flex flex-col leading-none">
+              <span className="font-serif font-black italic text-[15px] tracking-wider text-white">THE ARMY</span>
+              <span className="font-display font-black text-[9px] text-gym-accent tracking-widest uppercase mt-0.5">FITNESS</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}

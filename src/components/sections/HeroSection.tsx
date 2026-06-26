@@ -62,8 +62,9 @@ export default function HeroSection() {
         <div className="flex flex-col select-none">
           <div
             ref={subtitleRef}
-            className="flex items-center gap-2 mb-4 text-xs font-display font-extrabold tracking-widest text-gym-accent uppercase"
+            className="flex items-center gap-3 mb-4 text-xs font-display font-extrabold tracking-widest text-gym-accent uppercase"
           >
+            <img src="/logo-symbol.jpg" alt="The Army Fitness Logo symbol" className="h-6 w-auto object-contain brightness-90" />
             <span>01 // THE ARMY FITNESS</span>
             <span className="w-1.5 h-1.5 rounded-full bg-gym-accent animate-pulse-slow" />
           </div>

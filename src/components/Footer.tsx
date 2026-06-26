@@ -30,12 +30,16 @@ export default function Footer() {
           {/* Brand section */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
-              <div className="mb-6">
+              <div className="flex items-center gap-3 mb-6">
                 <img 
-                  src="/logo.png" 
+                  src="/logo-symbol.jpg" 
                   alt="The Army Fitness Logo" 
                   className="h-12 w-auto object-contain brightness-90"
                 />
+                <div className="flex flex-col leading-none">
+                  <span className="font-serif font-black italic text-lg tracking-wider text-white">THE ARMY</span>
+                  <span className="font-display font-black text-xs text-gym-accent tracking-widest uppercase mt-0.5">FITNESS</span>
+                </div>
               </div>
               <p className="text-zinc-400 text-sm max-w-sm leading-relaxed mb-8">
                 Building strength, discipline, and a healthy lifestyle in Dandi, Gujarat. 
