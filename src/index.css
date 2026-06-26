@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-syne: 'Syne', sans-serif;
+
+  --color-gym-dark: #0a0b0d;
+  --color-gym-card: #121318;
+  --color-gym-accent: #10b981;
+  --color-gym-lime: #84cc16;
+  --color-gym-teal: #0d9488;
+}
+
+@layer base {
+  html {
+    background-color: #0a0b0d;
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    background-color: #0a0b0d;
+    color: #f4f4f5; /* zinc-100 */
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0b0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a; /* zinc-800 */
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #10b981; /* neon accent */
+  }
+
+  /* Hide default cursor on desktop */
+  @media (min-width: 1025px) {
+    body, a, button, [role="button"], input, textarea, select {
+      cursor: none !important;
+    }
+  }
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scrollRight 30s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom blending and micro utilities */
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
+/* Glowing Border effect */
+.glow-card {
+  position: relative;
+  background: #121318;
+  border: 1px solid rgba(39, 39, 42, 0.5); /* zinc-800 */
+  transition: border-color 0.5s ease;
+}
+
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, #10b981 0%, #84cc16 50%, transparent 100%);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card:hover {
+  border-color: transparent;
+}
+
+.glow-card:hover::after {
+  opacity: 1;
+}
+
+/* Text reveal clip paths */
+.clip-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
